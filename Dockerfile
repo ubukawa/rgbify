@@ -15,3 +15,7 @@ sqlite3 \
 && cd rio-rgbify \
 && pip install -e '.[test]' \
 && cd .. \
+&& git clone https://github.com/mapbox/mbutil \
+&& cd mbutil \
+&& python setup.py install \
+&& cd .. \

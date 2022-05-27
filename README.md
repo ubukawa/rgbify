@@ -10,14 +10,14 @@ rake build
 # use
 ## in interactive shell
 ```
-docker run -ti --rm -v /Users/you/somewhere:/data unvt/rgbify bash
+docker run -ti --rm -v /Users/you/somewhere:/data unvt/rgbify:ubukawa bash
 $ cd data
 $ rasterio rgbify --max-z 16 --min-z 2 -i 0.1 -b -10000 --verbose /data/source.tif /data/dst.mbtiles
 ```
 
 ## batch
 ```
-docker run -ti --rm -v /Users/you/somewhere:/data unvt/rgbify rasterio rgbify --max-z 16 --min-z 2 -i 0.1 -b -10000 --verbose /data/source.tif /data/dst.mbtiles
+docker run -ti --rm -v /Users/you/somewhere:/data unvt/rgbify:ubukawa rasterio rgbify --max-z 16 --min-z 2 -i 0.1 -b -10000 --verbose /data/source.tif /data/dst.mbtiles
 ```
 
 # references
