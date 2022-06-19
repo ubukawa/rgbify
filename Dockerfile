@@ -19,3 +19,9 @@ sqlite3 \
 && cd mbutil \
 && python setup.py install \
 && cd .. \
+&& git clone https://github.com/mapbox/tippecanoe \
+&& cd tippecanoe \
+&& make -j3 LDFLAGS="-latomic" \
+&& make install \
+&& cd .. \
+&& rm -rf tippecanoe
